@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="Css/style.css">
+        <link rel="shortcut icon" href="Media/Asset 2.png" type="image/x-icon">
+        <title>Kareem Khaled | Dashboard</title>
+    </head>
+    <body>
+        <section class="main">
+            <nav class="menu-bar">
+                <div class="design-form">
+                    <img alt="Preview">
+                    <div><span>Design Num</span><input type="text" name="" id="num-fld" readonly ></div>
+                    <div><span>Design Title</span><input type="text" name="" id="title-fld" readonly></div>
+                    <div><span>Design Category</span><input list="ctgry" name="" id="ctgry-fld" readonly></div>
+                    <div><span>Design URL</span><input type="text" name="" id="url-fld" readonly></div>
+                    <div><span>Date Modified</span><input type="text" name="" id="date-fld" readonly></div>
+                </div>
+                <div class="bar" onclick="window.open('https:\/\/docs.google.com/spreadsheets/d/1ZxqdunZo6h5eO45rB8ggDolv-f82a7C0TcCxHj08qFA/edit?gid=0#gid=0', '_blank')">New Design / Edit</div>
+                <div class="bar" onclick="OpenGenerate()">Generate design link</div>
+            </nav>
+            <div class="main-cont">
+                <nav class="head">
+                    <div class="total">
+                        Total Designs : <span>0</span>
+                    </div>
+                    <div class="social">
+                        Social Media Designs : <span>0</span>
+                    </div>
+                    <div class="logo">
+                        Logo Designs : <span>0</span>
+                    </div>
+                    <div class="flyers">
+                        Flyers Designs : <span>0</span>
+                    </div>
+                    <div class="show-only">
+                        <label for="catgry">Show Only </label>
+                        <select id="catgry" >
+                            <option value="All">All</option>
+                            <option value="Social media">Social media</option>
+                            <option value="Logo">Logo</option>
+                            <option value="Flyers">Flyers</option>
+                        </select>
+                    </div>
+                </nav>
+                <div class="homepage"></div>
+            </div>
+        </section>
+        <div class="gen-link">
+            <span>Enter your design's link on Google Drive.</span>
+            <input type="text" id="drivelink-fld" name="">
+            <button onclick="Generate()">Generate</button>
+        </div>
+    </body>
+    <datalist id="ctgry">
+        <option value="Social media design">
+        <option value="Logo design">
+        <option value="Flyers design">
+    </datalist>
+    <script src="Script/bootstrap.bundle.min.js"></script>
+    <script src="Script/java.js"></script>
+
+</html>
+<!--   Æ   -->
