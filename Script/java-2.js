@@ -6,7 +6,6 @@ let month = today.getMonth() + 1;
 let year = today.getFullYear(); 
 let DateNow = `${day.toString().padStart(2, '0')}-${month.toString().padStart(2, '0')}-${year}`;
 
-
 const xhr = new XMLHttpRequest();
 xhr.open("GET", "https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLjanmuKtskg7njnZvNndjOBtxmXG0Dx99DVDmkJqVRJHBhmXnjs51Ax1CCcMckLgWz5o73xr_H96DPCXcea7u8tuM126kkjRjSHsUA5p1khQxUWfVbHlPMhogEI_VBkCARpVDe1i97ag_y33MnLhcJWKLACjSQEV_BXG1DM5TzgvMYdtHzs8-HbQCasEWvNvIRJudg8nFCTHrTjcQblUdPNZ-SbBusTAxckzo-QUYdAREsDKpFdMZSbCKbhFyGuYgMq2NLiLkzTJzERXGKbqg2Q_B7lkLQKTsQJghmL&lib=MkrRJvITPZxS_oP5Su5epmftVeO-hctRV", true);
 xhr.onload = function () {
